@@ -44,3 +44,6 @@ Projeto desenvolvido como trabalho freelance para cliente real, com foco em pres
 ## 📷 Imagem sessão de integração com canal do Youtube
 
 <img width="1095" height="943" alt="image" src="https://github.com/user-attachments/assets/bbea64e6-dc51-4bb7-b78a-6a7d93493647" />
+
+## 🔗 Link landing page para visualização
+https://cesarmicheli.com.br/
