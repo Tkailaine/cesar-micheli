@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+ @media(max-width:600px){
+
+    header {
+        padding: 10px;
+    }
+    #logo {
+        width: 200px;
+    }
+
+    #bandeira{
+        width: 100%;
+    }
+
+    #bandeira div{
+        width: 80%;
+
+    }
+
+    section{
+        width:80%;
+    }
+      
+      .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+      }
+      .servico-item{
+        flex-direction: column;
+        text-align: center;
+      }
+
+    #container-form{
+        flex-direction: column-reverse;
+    }
+    #container-form p{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:601px) and (max-width: 768px) {
+    
+    header {
+        padding: 10px;
+    }
+    #logo {
+        width: 200px;
+    } 
+    section{
+        max-width: 90%;
+    }
+    
+    #bandeira div{
+       width: 80%;
+
+    }
+
+     .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      }
+
+    #container-form{
+        flex-direction: column-reverse;
+    }
+    #container-form p{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    form{
+        width: 350px;
+    }
+
+}
+     
+/* Médio (tablets e telas pequenas) */
+@media (min-width:769px) and  (max-width: 1024px) {
+    section{
+        max-width: 90%;
+    }
+    
+     #bandeira div{
+       width: 80%;
+
+    }
+
+     .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+      }
+
+    #container-form{
+        display: flex;
+        flex-direction: row;
+      
+    }
+    #container-form p{
+        width: 40%;
+        text-align: left;
+
+    }
+
+    form{
+        width: 350px;
+    }
+
+    
+   
+
+}
+      
+/* Grande (laptops e desktops médios) */
+@media (min-width:1025px){
+    section{
+        width: 90%;
+        max-width: 1200px;
+    } 
+
+     #bandeira{
+        width: 100vw;
+        
+    }
+
+    #bandeira button a{
+    font-size: 1.2em;
+    font-weight: 400;
+    }
+
+    #bandeira h1{
+      font-size: 2em;
+    }
+    
+    #bandeira div{
+       max-width: 80%;
+
+    }
+
+    .servicos-lista {
+    grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+    }
+
+
+    form{
+        width: 400px;
+    }
+
+     #container-form{
+        display: flex;
+        flex-direction: row;
+      
+    }
+    #container-form p{
+        width: 50%;
+        text-align: left;
+
+    }
+
+}

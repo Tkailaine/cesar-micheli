@@ -1,0 +1,24 @@
+{
+  "name": "cesar-micheli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tkailaine/cesar-micheli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tkailaine/cesar-micheli/issues"
+  },
+  "homepage": "https://github.com/Tkailaine/cesar-micheli#readme",
+  "dependencies": {
+    "robots-txt": "^1.0.0",
+    "sitemap": "^8.0.0"
+  }
+}

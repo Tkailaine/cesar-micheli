@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --fonte-destaque: Montserrat, sans-serif;
+    --fonte-principal: Roboto, sans-serif;
+    --cor-primaria: #0077b6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+strong{
+  color: #dbae1a;
+}
+
+h1,h2,h3{
+  font-family: var(--fonte-destaque);
+}
+
+body, html{
+  overflow-x: hidden;
+}
+
+body{
+  font-family: var(--fonte-principal);
+  line-height: 2em;
+}
+
+
+ header {
+  position: fixed;
+  color: white;
+  padding: 20px 0px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  background-color: transparent; 
+}
+
+header.scrolled {
+  background-color: #111; 
+  padding: 15px 0px; 
+}
+
+header figure {
+  margin: 0;
+}
+
+#logo {
+  width: 250px;
+  transition: filter 0.3s ease;
+}
+
+
+.btn-whatsapp{
+  padding: 10px 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  border: none;
+  
+}
+
+.btn-whatsapp:hover{
+    background-color: #1ebc57;
+}
+
+.btn-whatsapp a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#bandeira{
+    position: relative;
+    max-width: 100vw;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.068), rgba(0, 0, 0, 0.452)), url(imagens/bandeira.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+}
+
+#bandeira div{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -55%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    
+
+}
+
+#bandeira h1{
+  font-weight: 500;
+  font-family: 'Merriweather', serif;
+}
+
+#bandeira button{
+    display: block;
+    left: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+#bandeira button a{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+p{
+    line-height: 2em;
+    text-align: justify;
+
+}
+
+
+section {
+  margin: 50px auto;
+}
+
+section h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #002B5B;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #dbae1a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.sobre p {
+  font-size: 1.15rem;
+  margin: 0 auto;
+  
+
+}
+.servicos-lista {
+  display: grid;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.servico-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  cursor: default;
+  
+}
+
+.servico-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+  background-color: #dbae1a;
+  color: white;
+}
+
+
+.servico-item:hover i {
+  color: white;
+}
+
+.servico-item i {
+  font-size: 24px;
+  color: #002B5B;
+
+}
+
+#container-form{
+  display: flex;
+  align-items: center;
+  gap: 50px;  
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url(imagens/background-form.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 40px;
+    
+}
+
+#container-form p{
+  font-size: 1.5em;
+  color: white;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005f87;
+}
+
+
+#saiba-mais {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.grade-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.cartao-video {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.cartao-video .thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16/9;
+  background: #000;
+}
+
+.cartao-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cartao-video h4 {
+  font-size: 0.9rem;
+
+  margin: 0;
+  padding: 12px 14px 16px;
+  line-height: 2em;
+  font-weight: 400;
+}
+
+.navegacao-videos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;       /* espaço entre os botões */
+  margin-top: 20px;
+}
+
+.navegacao-videos button {
+  padding: 10px 20px;
+  background-color: #dbae1a; /* vermelho elegante */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.navegacao-videos button:hover:not(:disabled) {
+  background-color: #dbae1a; /* vermelho mais escuro ao passar o mouse */
+  transform: translateY(-2px);
+}
+
+.navegacao-videos button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* WhatsApp Button */
+.whatsapp-button {
+    background-color: #25d366;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ANIMAÇÃO DE SURGIMENTO */
+
+.surgir {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.surgir.aparecendo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.surgir-direita {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-out;
+}
+.surgir-direita.aparecendo {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.surgir-esquerda {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+.surgir-esquerda.aparecendo {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.surgir-baixo {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+.surgir-baixo.aparecendo {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.rodape {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.rodape info{
+  text-align: left;
+}
+
+.container-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-rodape, .contato-rodape, .social-rodape {
+  flex: 1 1 250px;
+}
+
+.social-rodape div{
+  display: flex;
+  flex-direction: column;
+}
+.rodape h4 {
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.rodape a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: color 0.3s;
+  
+
+}
+
+.rodape a:hover {
+  color: #0077b6;
+}
+
+.copyright-rodape {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #ccc;
+}
